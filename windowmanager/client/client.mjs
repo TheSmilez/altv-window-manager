@@ -21,7 +21,6 @@ alt.onServer('playerLeftVehicle', (vehicle, seat) => {
 
 /* ALL WINDOWS DOWN */
 alt.onServer('window:allDown', vehicle => {
-    checkClass();
     if (isInVehicle === false) {
         alt.emitServer('noVehicle');
         return;
@@ -36,7 +35,6 @@ alt.onServer('window:allDown', vehicle => {
 
 /* ALL WINDOWS UP */
 alt.onServer('window:allUp', vehicle => {
-    checkClass();
     if (isInVehicle === false) {
         alt.emitServer('noVehicle');
         return;
